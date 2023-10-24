@@ -12,7 +12,7 @@ class Entree(models.Model):
     id = models.AutoField(primary_key=True)
     nom = models.CharField(max_length=100)
     image = models.ImageField(
-        upload_to='minicucina/static/minicucina/images/entrees/')
+        upload_to='static/images/entrees/')
     nom_fichier = models.CharField(max_length=100, blank=True, editable=False)
     # Définir les choix pour le champ "jour"
     JOUR_CHOICES = (
@@ -45,7 +45,7 @@ class Plat(models.Model):
     id = models.AutoField(primary_key=True)
     nom = models.CharField(max_length=100)
     image = models.ImageField(
-        upload_to='minicucina/static/minicucina/images/plats/')
+        upload_to='static/images/plats/')
     nom_fichier = models.CharField(max_length=100, blank=True, editable=False)
     # Définir les choix pour le champ "jour"
     JOUR_CHOICES = (
@@ -77,7 +77,7 @@ class Dessert(models.Model):
     id = models.AutoField(primary_key=True)
     nom = models.CharField(max_length=100)
     image = models.ImageField(
-        upload_to='minicucina/static/minicucina/images/desserts/')
+        upload_to='static/images/desserts/')
     nom_fichier = models.CharField(max_length=100, blank=True, editable=False)
 
     # Définir les choix pour le champ "jour"
@@ -110,7 +110,7 @@ class Boisson(models.Model):
     id = models.AutoField(primary_key=True)
     nom = models.CharField(max_length=100)
     image = models.ImageField(
-        upload_to='minicucina/static/minicucina/images/boissons/')
+        upload_to='static/images/boissons/')
     nom_fichier = models.CharField(max_length=100, blank=True, editable=False)
 
     # Définir les choix pour le champ "jour"
