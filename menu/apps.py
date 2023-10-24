@@ -6,4 +6,3 @@ class MenuConfig(AppConfig):
     name = 'menu'
 
 
-
